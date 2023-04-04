@@ -1,0 +1,767 @@
+{
+	"pages": [
+		{
+			"path": "pages/tabbar/index/view/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/zones/change/change",
+			"style": {
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/tabbar/chat/view/index",
+			"style":{
+				"navigationBarTextStyle":"black",
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}, 
+		{
+			"path": "pages/tabbar/service/view/index",
+			"style":{
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}, 
+		{
+			"path": "pages/tabbar/user/view/index",
+			"style":{
+				"navigationBarTextStyle":"black",
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}, 
+		{
+			"path": "pages/page/login/login",
+			"style":{
+				"navigationBarTextStyle":"black",
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/page/browser/view/index",
+			"style": {
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				},
+				"navigationBarBackgroundColor": "#12C4D0",
+				"navigationBarTextStyle": "white",
+				"app-plus":{
+					"titleNView": {}
+				}
+			}
+		},
+		{
+			"path": "pages/zones/detail/detail",
+			"style": {
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+		}
+		,{
+		    "path" : "pages/zones/company/company",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+		        "app-plus":{
+		        	"bounce":"none"
+		        }
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/zones/committee/committee",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+	    ,{
+            "path" : "pages/announce/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/announce/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/announce/tasklist/tasklist",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+		,{
+            "path" : "pages/survey/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/page/readlog/readlog",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/house/house",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/profile/profile",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+		,{
+		    "path" : "pages/mine/setting/setting",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTextStyle":"black",
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+		        "app-plus":{
+		        	"bounce":"none"
+		        }
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/mine/verify/verify",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+        }
+        ,{
+            "path" : "pages/mine/verify_mode_2/view/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+        }
+		,{
+            "path" : "pages/mine/verify_mode_1/view/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+        }
+        ,{
+            "path" : "pages/chat/window/window",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/binding/choose/choose",
+			"style": {
+				"navigationBarTextStyle":"black",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus":{
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/binding/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+        }
+        ,{
+            "path" : "pages/binding/bind/bind",
+            "style" :                                                                                    
+            {
+                "navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/change/change",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/page/choosecity/choosecity",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/survey/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/verify_mode_3/verify_mode_3",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/company/company",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/change_phone/change_phone",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/change_password/change_password",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/page/house_details/house_details",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/survey/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationBarTextStyle":"black",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/announce/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationBarTextStyle":"black",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/survey/vote_add/vote_add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationBarTextStyle":"black",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        },{
+            "path" : "pages/survey/entry_add/entry_add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationBarTextStyle":"black",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/survey/vote_house/vote_house",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/complaint/list/list",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/complaint/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/complaint/add/add",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/zones/device/device",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/repair/list/list",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/repair/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/repair/add/add",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/illegal/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/illegal/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/illegal/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/page/publish/publish",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/page/comments/comments",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        },
+		// 物业缴费
+		{
+            "path" : "pages/payment/payment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        },{
+		    "path" : "pages/survey/result_count/result_count",
+		    "style" :                                                                                    
+		    {
+				"navigationBarTextStyle":"black",
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/news/list/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+                "app-plus":{
+                	"bounce":"none"
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/news/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/vein/list/list",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/vein/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/user_cancell/user_cancell",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/zones/filing/filing",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/share/apply/apply",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/share/history/history",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/share/detail/detail",
+            "style" :                                                                                    
+            {
+				"navigationBarTextStyle":"black",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"fontSize": "12px",
+		"color": "#666666",
+		"selectedColor": "#00d5c0",
+		"borderStyle": "white",
+		"height":"55px",
+		"iconWidth" : "22px",
+		"midButton": {
+			"iconPath": "static/tabbar/opendoor.png",
+			"selectedIconPath": "static/tabbar/opendoor_select.png",
+			"height": "66px",
+			"iconWidth": "56px"
+		},
+		"list": [{
+			"pagePath": "pages/tabbar/index/view/index",
+			"text": "小区",
+			"iconPath": "/static/tabbar/home@3x.png",
+			"selectedIconPath": "/static/tabbar/home_on@3x.png"
+		}, {
+			"pagePath": "pages/survey/list/list",
+			"text": "议事",
+			"iconPath": "/static/tabbar/service@3x.png",
+			"selectedIconPath": "/static/tabbar/service_on@3x.png"
+		}, {
+			"pagePath": "pages/tabbar/chat/view/index",
+			"text": "消息",
+			"iconPath": "/static/tabbar/message@3x.png",
+			"selectedIconPath": "/static/tabbar/message_on@3x.png"
+		}, {
+			"pagePath": "pages/tabbar/user/view/index",
+			"text": "我的",
+			"iconPath": "/static/tabbar/user@3x.png",
+			"selectedIconPath": "/static/tabbar/user_on@3x.png"
+		}]
+	}
+}

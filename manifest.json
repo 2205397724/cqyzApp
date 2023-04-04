@@ -1,0 +1,238 @@
+{
+    "name" : "智慧物业",
+    "appid" : "__UNI__C8A96DC",
+    "description" : "“重庆业主”APP是以物业为主体的社区服务平台，通过“互联网+”物业，增加与业主的沟通，使物业管理各环节信息更加透明公开，保修更加快捷，提供居民生活质量。",
+    "versionName" : "2.0.8",
+    "versionCode" : 208,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        //"usingComponents" : true,
+        //"nvueCompiler":"weex",   
+        //"compilerVersion" : 3,
+        //用于配置隐私政策提示框配置策略
+        "privacy" : {
+            "prompt" : "template",
+            "template" : {
+                "title" : "用户协议和隐私政策",
+                "message" : "请你务必审慎阅读、充分理解“用户协议”和“隐私政策”各条款，包括但不限于：为了更好的向你提供服务，我们需要收集你的设备标识、操作日志等信息用于分析、优化应用性能。<br/>你可阅读<a href='http://app.cqyezhuapp.com/agreement.html'>《用户协议》</a>和<a href='http://app.cqyezhuapp.com/privacy.html'>《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+                "buttonAccept" : "同意",
+                "buttonRefuse" : "暂不同意",
+                "second" : {
+                    "title" : "温馨提示",
+                    "message" : "进入应用前，你需先同意<a href='http://app.cqyezhuapp.com/agreement.html'>《用户协议》</a>和<a href='http://app.cqyezhuapp.com/privacy.html'>《隐私政策》</a>，否则将退出应用。",
+                    "buttonAccept" : "同意并继续",
+                    "buttonRefuse" : "退出应用"
+                }
+            }
+        },
+        "usingComponents" : true,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Share" : {},
+            "VideoPlayer" : {},
+            "Push" : {},
+            "OAuth" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>"
+                ],
+                "schemes" : "cqyezhuapp",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "permissionExternalStorage" : {
+                    "request" : "none",
+                    "prompt" : "应用保存运行状态等信息，需要获取读写手机存储（系统提示为访问设备上的照片、媒体内容和文件）权限，请允许。"
+                },
+                "permissionFineLocation" : {
+                    "request" : "none",
+                    "prompt" : "应用需要访问您的确切位置，便于推送和获取周边信息，请允许。"
+                },
+                "permissionCoarseLocation" : {
+                    "request" : "none",
+                    "prompt" : "应用需要访问您的大致位置，便于推送和获取周边信息，请允许。"
+                },
+                "permissionPhoneState" : {
+                    "request" : "none",
+                    "prompt" : "为保证您正常、安全地使用，需要获取设备识别码（部分手机提示为获取手机号码）使用权限，请允许。"
+                },
+                "autoSdkPermissions" : true
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "pushRegisterMode" : "manual", //关闭应用启动时会弹出“发送通知”系统授权框，需要隐私政策同意之后再触发异步注册方法。
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "“重庆业主”需要您的同意，才能访问相册，以便于上传/发布信息",
+                    "NSPhotoLibraryAddUsageDescription" : "“重庆业主”需要您的同意，才能添加照片，以便于保存照片",
+                    "NSCameraUsageDescription" : "\"重庆业主\"需要您的同意，才能访问相机，以便于上传/发布信息",
+                    "NSMicrophoneUsageDescription" : "\"重庆业主\"需要您的同意，才能访问麦克风，以便于上传/发布信息",
+                    "NSLocationWhenInUseUsageDescription" : "\"重庆业主\"需要您的同意，才能在使用期间访问位置，以便于获取附近信息",
+                    "NSLocationAlwaysAndWhenInUseUsageDescription" : "\"重庆业主\"需要您的同意，才能访问位置，以便于获取附近信息",
+                    "NSLocationAlwaysUsageDescription" : "\"重庆业主\"需要您的同意，才能始终访问位置，以便于获取附近信息",
+                    "NSUserTrackingUsageDescription" : "请放心，开启权限不会获取您在其他站点的隐私信息，该权限仅用于标识设备并保障服务安全与提示浏览体验。",
+                    "NSLocalNetworkUsageDescription" : "\"重庆业主\"需要您的同意，才能访问网络，以便于更好的为你服务。"
+                },
+                "capabilities" : {
+                    "entitlements" : {
+                        /*ios通用链接配置*/
+                        "com.apple.developer.associated-domains" : [ "applinks:proxy.cqyezhuapp.com" ]
+                    }
+                },
+                "urltypes" : "cqyezhuapp",
+                "idfa" : true,
+                "shortcuts" : [
+                    {
+                        "type" : "share",
+                        "title" : "分享",
+                        "subtitle" : "分享给好友",
+                        "icontype" : "UIApplicationShortcutIconTypeShare"
+                    }
+                ],
+                "dSYMs" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "share" : {
+                    "qq" : {
+                        "appid" : "1110243059"
+                    },
+                    "weixin" : {
+                        "appid" : "wx55eccbad4d89a1b9",
+                        "UniversalLinks" : "https://proxy.cqyezhuapp.com/"
+                    }
+                },
+                "speech" : {},
+                "ad" : {},
+                "payment" : {},
+                "push" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx55eccbad4d89a1b9",
+                        "appsecret" : "c9bf372afdbbc734560b92fcd43998eb",
+                        "UniversalLinks" : "https://proxy.cqyezhuapp.com/"
+                    },
+                    "apple" : {}
+                }
+            },
+            "icons" : {
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png"
+                    },
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "/Users/apple/Documents/cqwy_app/user/splash/480_762_android.png",
+                    "xhdpi" : "/Users/apple/Documents/cqwy_app/user/splash/720_1242_android.png",
+                    "xxhdpi" : "/Users/apple/Documents/cqwy_app/user/splash/1080_1882_android.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "/Users/apple/Documents/cqwy_app/user/splash/1242_2688_iphone.png",
+                        "landscape-896h@3x" : "/Users/apple/Documents/cqwy_app/user/splash/2688_1242_ipone.png",
+                        "portrait-896h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/828_1792_iphone.png",
+                        "landscape-896h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/1792_828_iphone.png",
+                        "iphonex" : "/Users/apple/Documents/cqwy_app/user/splash/1125_2436_iphone.png",
+                        "iphonexl" : "/Users/apple/Documents/cqwy_app/user/splash/2436_1125_iphone.png",
+                        "retina55" : "/Users/apple/Documents/cqwy_app/user/splash/1242_2208_iphone.png",
+                        "retina55l" : "/Users/apple/Documents/cqwy_app/user/splash/2208_1242_iphone.png",
+                        "retina47" : "/Users/apple/Documents/cqwy_app/user/splash/750_1334_iphone.png",
+                        "retina47l" : "/Users/apple/Documents/cqwy_app/user/splash/1334_750_iphone.png",
+                        "retina40" : "/Users/apple/Documents/cqwy_app/user/splash/640_1136_iphone.png",
+                        "retina40l" : "/Users/apple/Documents/cqwy_app/user/splash/1136_640_iphone.png",
+                        "retina35" : "/Users/apple/Documents/cqwy_app/user/splash/640_960_iphone.png"
+                    },
+                    "ipad" : {
+                        "portrait-1366h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/2048_2732_ipad.png",
+                        "landscape-1366h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/2732_2048_ipad.png",
+                        "portrait-1194h@2" : "/Users/apple/Documents/cqwy_app/user/splash/1668_2388_ipad.png",
+                        "landscape-1194h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/2388_1668__ipad.png",
+                        "portrait-1112h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/1668_2224_ipad.png",
+                        "landscape-1112h@2x" : "/Users/apple/Documents/cqwy_app/user/splash/2224_1668_ipad.png",
+                        "portrait-retina7" : "/Users/apple/Documents/cqwy_app/user/splash/1536_2048_ipad.png",
+                        "landscape-retina7" : "/Users/apple/Documents/cqwy_app/user/splash/2048_1536_ipad.png",
+                        "portrait7" : "/Users/apple/Documents/cqwy_app/user/splash/768_1024_ipad.png",
+                        "landscape7" : "/Users/apple/Documents/cqwy_app/user/splash/1024_768_ipad.png"
+                    },
+                    "storyboard" : "/Users/apple/Documents/wuyeapp-CustomStoryboard.zip"
+                },
+                "iosStyle" : "common",
+                "androidStyle" : "common",
+                "useOriginalMsgbox" : true
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx523cae0b41c4c494",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "navigateToMiniProgramAppIdList" : [ "wx2c4dc6427b1b83ff" ],
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    }
+}

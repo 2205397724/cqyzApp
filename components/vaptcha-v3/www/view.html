@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vaptcha</title>
+    <style>
+        body,html{margin:0}
+        #vaptchaContainer{
+            width: 100%;
+            /*200:115*/
+        }
+    </style>
+</head>
+
+<body>
+
+<script>
+    window.vaptchatimeout = setTimeout(() => {
+        var data={
+            signal:"error",
+            data:"error"
+        }
+        document.addEventListener('UniAppJSBridgeReady', function() {
+            uni.postMessage({
+                data
+            });
+        });
+    }, 5*1000);
+</script>
+<!-- 微信 JS-SDK 如果不需要兼容小程序，则无需引用此 JS 文件。 -->
+<!--<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>-->
+<!-- uni 的 SDK，必须引用。 -->
+<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+<!-- 在这里配置你的v3.js资源地址,e.g.: https://xxx.com/v3.js -->
+<script src="/v3.js"></script>
+
+<script>
+    document.addEventListener('UniAppJSBridgeReady', function() {
+        uni.getEnv(function(res) {
+            console.log('当前环境：' + JSON.stringify(res));
+        });
+
+        var qs = getQueryString();
+        var vobj;
+        if (qs != []){
+            console.log()
+            var vid = qs['vid'];
+            var lang = qs['lang'];
+            var offline_server=qs['offline_server'];
+            var scene = qs['scene']||0
+            var area = qs['area'] || 'cn'
+
+            vaptcha({
+                vid: vid,
+                type: 'invisible',
+                lang : lang,
+                scene: scene,
+                aiAnimation: true,
+                area: area
+            }).then(function(obj) {
+                obj.listen('pass', function() {
+                    var data={
+                        signal:"pass",
+                        data:obj.getServerToken()
+                    }
+                    uni.postMessage({ data });
+                })
+                obj.listen('close', function() {
+                    var data={
+                        signal:"cancel",
+                        data:""
+                    }
+                    uni.postMessage({data})
+                })
+                clearTimeout(window.vaptchatimeout)
+                obj.validate()
+            })
+        }
+
+        function getQueryString() {
+            var qs = location.search.substr(1), // 获取url中"?"符后的字串
+                args = {}, // 保存参数数据的对象
+                items = qs.length ? qs.split("&") : [], // 取得每一个参数项,
+                item = null,
+                len = items.length;
+
+            for(var i = 0; i < len; i++) {
+                item = items[i].split("=");
+                var name = decodeURIComponent(item[0]),
+                    value = decodeURIComponent(item[1]);
+                if(name) {
+                    args[name] = value;
+                }
+            }
+            return args;
+        }
+
+
+    });
+</script>
+</body>
+
+</html>
